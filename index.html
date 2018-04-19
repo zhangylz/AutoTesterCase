@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>自动化测试用例</title>
+    <script type="text/javascript" src="bootstrap/js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <style type="text/css">
+        body{
+            padding:20px;
+            
+        }
+    </style>
+    <script type="text/javascript">
+        $(function(){
+            var a = [
+                "CSS: Cascading Style Sheets，层叠格式表",
+                "CGI（Common Gateway Interface，通用网关接口）", 
+                "DCD: Document Content Description for XML: XML文件内容描述",
+                "DTD: Document Type Definition，文件类型定义", 
+                "HTML（HyperText Markup Language，超文本标记语言）", 
+                "JVM: Java Virtual Machine, Java虚拟机",
+                "SGML: Standard Generalized Markup Language，标准通用标记语言 ",
+                "XML: Extensible Markup Language（可扩展标记语言）",
+                "XSL: Extensible Style Sheet Language（可扩展设计语言）", 
+                "SMTP（Simple Mail Transfer Protocol，简单邮件传输协议）", 
+                "VPN: virtual private network，虚拟局域网"
+            ]
+            $("input").typeahead({
+                items:4,
+                source:a
+            })
+        });
+    </script>
+    </head>
+    <body>
+    <h2>自动化测试用例</h2>
+    <table class="table table-striped table-bordered table-hover table-condensed">
+        <tbody>
+            <tr>
+                <th>No</th>
+                <th>用例名称</th>
+                <th>结算信息&手牌</th>
+                <th>测试流程</th>
+            </tr>
+            <tr name="tr1">
+                <td><input class="span1" placeholder="1" name="no" type="text"></td>
+                <td><input class="span2" placeholder="casename" name="caseName" type="text"></td>
+                <td>
+                    <div class="accordion" id="box">
+                        <div class="accordion-group">
+                            <div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#box" href="#1">结算信息</a>
+                                <div id="1" class="accordion-body collapse">
+                                    <label name="canHu">可胡
+                                        <label class="radio inline">
+                                            <input type="radio" name="canHuOptionsRadios" id="optionsRadios1" value="true" checked>True
+                                        </label>
+                                        <label class="radio inline">
+                                            <input type="radio" name="canHuOptionsRadios" id="optionsRadios2" value="false">False
+                                        </label>
+                                    </label>
+                                    <label name="liuJu">流局
+                                        <label class="radio inline">
+                                            <input type="radio" name="ljOptionsRadios" id="optionsRadios1" value="true" checked>True
+                                        </label>
+                                        <label class="radio inline">
+                                            <input type="radio" name="ljOptionsRadios" id="optionsRadios2" value="false">False
+                                        </label>
+                                    </label>
+                                    <div class="accordion" id="moneyBox">
+                                    <div class="accordion-group">
+                                        <div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#moneyBox" href="#2">分数</a> </div>
+                                        <div id='2' class="accordion-body collapse" style="float:left;width:100%;">
+                                            <div  style="float:left;width:25%;">
+                                            <label for="money1" class="text-left search_form_div_label">分数1<label>
+                                            <input type="text" class="form-control" id="money1" maxlength="6" onkeyup="value=value.replace(/[^\.\+\-\d]/g,'')" placeholder="请输入数字" style="width: 70px;"/>
+                                            </div>
+                                            <div  style="float:left;width:25%;">
+                                            <label for="money2" class="text-left search_form_div_label">分数2</label>
+                                            <input type="text" class="form-control" id="money2" maxlength="6" onkeyup="value=value.replace(/[^\.\+\-\d]/g,'')" placeholder="请输入数字" style="width: 70px;"/>
+                                            </div>
+                                            <div  style="float:left;width:25%;">
+                                            <label for="money3" class="text-left search_form_div_label">分数3</label>
+                                            <input type="text" class="form-control" id="money3" maxlength="6" onkeyup="value=value.replace(/[^\.\+\-\d]/g,'')" placeholder="请输入数字" style="width: 70px;"/> 
+                                            </div>
+                                            <div  style="float:left;width:25%;"></div>
+                                            <label for="money4" class="text-left search_form_div_label">分数4</label>
+                                            <input type="text" class="form-control" id="money4" maxlength="6" onkeyup="value=value.replace(/[^\.\+\-\d]/g,'')" placeholder="请输入数字" style="width: 70px;"/> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion" id="handCardsBox"></div>
+                                    <div class="accordion-group">
+                                        <div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#handCardsBox" href="#3">手牌</a> </div>
+                                        <div id="3" class="accordion-body collapse">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </body>
+</html>
