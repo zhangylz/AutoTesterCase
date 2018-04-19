@@ -50,8 +50,9 @@
                 <td>
                     <div class="accordion" id="box">
                         <div class="accordion-group">
-                            <div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#box" href="#1">结算信息</a>
-                                <div id="1" class="accordion-body collapse">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#box" href="#winBox">结算信息</a>
+                                <div id="winBox" class="accordion-body collapse">
                                     <label name="canHu">可胡
                                         <label class="radio inline">
                                             <input type="radio" name="canHuOptionsRadios" id="optionsRadios1" value="true" checked>True
@@ -70,10 +71,11 @@
                                     </label>
                                     <div class="accordion" id="moneyBox">
                                     <div class="accordion-group">
-                                        <div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#moneyBox" href="#2">分数</a> </div>
-                                        <div id='2' class="accordion-body collapse" style="float:left;width:100%;">
+                                        <div class="accordion-heading">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#moneyBox" href="#moneyList">分数</a> </div>
+                                        <div id='moneyList' class="accordion-body collapse" style="float:left;width:100%;">
                                             <div  style="float:left;width:25%;">
-                                            <label for="money1" class="text-left search_form_div_label">分数1<label>
+                                            <label for="money1" class="text-left search_form_div_label">分数1</label>
                                             <input type="text" class="form-control" id="money1" maxlength="6" onkeyup="value=value.replace(/[^\.\+\-\d]/g,'')" placeholder="请输入数字" style="width: 70px;"/>
                                             </div>
                                             <div  style="float:left;width:25%;">
@@ -92,9 +94,303 @@
                                     </div>
                                     <div class="accordion" id="handCardsBox"></div>
                                     <div class="accordion-group">
-                                        <div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#handCardsBox" href="#3">手牌</a> </div>
-                                        <div id="3" class="accordion-body collapse">
-                                            
+                                        <div class="accordion-heading">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#handCardsBox" href="#handCards">手牌</a> </div>
+                                        <div id="handCards" class="accordion-body collapse">
+                                            <div>
+                                                <label for="handcards1data" class="text-left search_form_div_label" style="float:left;">手牌1</label>
+                                                <input class="span2 uneditable-input" disabled type="text" placeholder="手牌数据" id="handcards1data" style="float:left;">
+                                                <label class="text-left search_form_div_label" style="float:left;" name="selectedNum1">选中数量为0</label>
+                                                <div class="accordion" id="selectCardsBox" style="float:left;">
+                                                <div class="accordion-group" name="handcard1">
+                                                    <div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#selectCardsBox" href="#selectHandCards1">选取手牌<a> </div>
+                                                    <div id="selectHandCards1" class="accordion-body collapse">
+                                                        <div id="wanCard">
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card1">1万
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card2">2万
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card3">3万
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card4">4万
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card5">5万
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card6">6万
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card7">7万
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card8">8万
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card9">9万
+                                                            </label>
+                                                        </div>
+                                                        <div id="tongCard">
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card11">1筒
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card12">2筒
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card13">3筒
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card14">4筒
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card15">5筒
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card16">6筒
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card17">7筒
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card18">8筒
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card19">9筒
+                                                            </label>
+                                                        </div>
+                                                        <div id="tiaoCard">
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card21">1条
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card22">2条
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card23">3条
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card24">4条
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card25">5条
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card26">6条
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card27">7条
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card28">8条
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card29">9条
+                                                            </label>
+                                                        </div>
+                                                        <div id="fengCard">
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card31">东  
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card32">南 
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card33">西  
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card34">北
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card35">中  
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card36">发  
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card37">白  
+                                                            </label>
+                                                        </div>
+                                                        <div id="huaCard">
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card41">春
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card42">夏 
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card43">秋 
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card44">冬  
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card45">梅 
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card46">兰 
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card47">竹
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card48">菊
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <label for="handcards2data" class="text-left search_form_div_label" style="float:left;">手牌2</label>
+                                                <input class="span2 uneditable-input" disabled type="text" placeholder="手牌数据" id="handcards2data" style="float:left;">
+                                                <label class="text-left search_form_div_label" style="float:left;" name="selectedNum2">选中数量为0</label>
+                                                <div class="accordion" id="selectCardsBox" style="float:left;">
+                                                <div class="accordion-group" name="handcard2">
+                                                    <div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#selectCardsBox" href="#selectHandCards2">选取手牌<a> </div>
+                                                    <div id="selectHandCards2" class="accordion-body collapse">
+                                                        <div id="wanCard">
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card1">1万
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card2">2万
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card3">3万
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card4">4万
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card5">5万
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card6">6万
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card7">7万
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card8">8万
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card9">9万
+                                                            </label>
+                                                        </div>
+                                                        <div id="tongCard">
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card11">1筒
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card12">2筒
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card13">3筒
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card14">4筒
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card15">5筒
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card16">6筒
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card17">7筒
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card18">8筒
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card19">9筒
+                                                            </label>
+                                                        </div>
+                                                        <div id="tiaoCard">
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card21">1条
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card22">2条
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card23">3条
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card24">4条
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card25">5条
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card26">6条
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card27">7条
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card28">8条
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card29">9条
+                                                            </label>
+                                                        </div>
+                                                        <div id="fengCard">
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card31">东  
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card32">南 
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card33">西  
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card34">北
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card35">中  
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card36">发  
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card37">白  
+                                                            </label>
+                                                        </div>
+                                                        <div id="huaCard">
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card41">春
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card42">夏 
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card43">秋 
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card44">冬  
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card45">梅 
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card46">兰 
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card47">竹
+                                                            </label>
+                                                            <label class="checkbox inline">
+                                                                <input type="checkbox" value="" name="card48">菊
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
