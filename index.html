@@ -97,241 +97,47 @@
                                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#huListBox" href="#huList">成牌列表</a> </div>
                                             <div id='huList' class="accordion-body collapse" style="float:left;width:100%;">
                                                 <div  style="float:left;width:25%;">
-                                                <label for="huList1" class="text-left search_form_div_label">成牌列表1</label>
-                                                <input type="text" class="form-control" id="huList1" maxlength="60" onkeyup="value=value.replace(/[^\.\+\-\d]/g,'')" placeholder="请输入数字" style="width: 150px;"/>
+                                                    <label for="huList1" class="text-left search_form_div_label">成牌列表1</label>
+                                                    <input type="text" class="form-control" id="huList1" maxlength="60" onkeyup="value=value.replace(/[^\.\+\-\d]/g,'')" placeholder="请输入数字" style="width: 150px;"/>
                                                 </div>
                                                 <div  style="float:left;width:25%;">
-                                                <label for="huList2" class="text-left search_form_div_label">成牌列表2</label>
-                                                <input type="text" class="form-control" id="huList2" maxlength="60" onkeyup="value=value.replace(/[^\.\+\-\d]/g,'')" placeholder="请输入数字" style="width: 150px;"/>
+                                                    <label for="huList2" class="text-left search_form_div_label">成牌列表2</label>
+                                                    <input type="text" class="form-control" id="huList2" maxlength="60" onkeyup="value=value.replace(/[^\.\+\-\d]/g,'')" placeholder="请输入数字" style="width: 150px;"/>
                                                 </div>
                                                 <div  style="float:left;width:25%;">
-                                                <label for="huList3" class="text-left search_form_div_label">成牌列表3</label>
-                                                <input type="text" class="form-control" id="huList3" maxlength="60" onkeyup="value=value.replace(/[^\.\+\-\d]/g,'')" placeholder="请输入数字" style="width: 150px;"/> 
+                                                    <label for="huList3" class="text-left search_form_div_label">成牌列表3</label>
+                                                    <input type="text" class="form-control" id="huList3" maxlength="60" onkeyup="value=value.replace(/[^\.\+\-\d]/g,'')" placeholder="请输入数字" style="width: 150px;"/> 
                                                 </div>
-                                                <div  style="float:left;width:25%;"></div>
-                                                <label for="huList4" class="text-left search_form_div_label">成牌列表4</label>
-                                                <input type="text" class="form-control" id="huList4" maxlength="60" onkeyup="value=value.replace(/[^\,\d]/g,'')" placeholder="使用逗号隔开" style="width: 150px;"/> 
+                                                <div  style="float:left;width:25%;">
+                                                    <label for="huList4" class="text-left search_form_div_label">成牌列表4</label>
+                                                    <input type="text" class="form-control" id="huList4" maxlength="60" onkeyup="value=value.replace(/[^\,\d]/g,'')" placeholder="使用逗号隔开" style="width: 150px;"/> 
                                                 </div>
-                                            </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="accordion" id="handCardsBox"></div>
-                    <div class="accordion-group">
-                        <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#box" href="#handCards">手牌</a>
-                        <div id="handCards" class="accordion-body collapse">
-                            <table class="table table-striped table-bordered table-hover table-condensed">
-                                <tbody>
-                                    <tr>
-                                        <th>序列</th>
-                                        <th>手中牌</th>
-                                        <th>选中数</th>
-                                        <th>选取</th>
-                                    </tr>
-                                    <tr name="handCards1">
-                                        <td> <input type="text" class="form-control" id="number" maxlength="5" onkeyup="value=value.replace(/[^\d]/g,'')" placeholder="1" style="width: 30px;"/></td>
-                                        <td> <input class="span4 uneditable-input" disabled type="text" placeholder="手牌数据" id="handcardsdata" /> </td>
-                                        <td><label class="text-left search_form_div_label"  id="selectedNum">0</label></td>
-                                        <td><div class="accordion" id="selectCardsBox1" >
-                                                <div class="accordion-group" name="handcard1">
-                                                    <div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#selectCardsBox1" href="#selectHandCards1">选取手牌<a> </div>
-                                                    <div id="selectHandCards1" class="accordion-body collapse">
-                                                        <div id="wanCard">
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card1">1万
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card2">2万
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card3">3万
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card4">4万
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card5">5万
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card6">6万
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card7">7万
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card8">8万
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card9">9万
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                        </div>
-                                                        <div id="tongCard">
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card11">1筒
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card12">2筒
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card13">3筒
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card14">4筒
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card15">5筒
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card16">6筒
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card17">7筒
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card18">8筒
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card19">9筒
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                        </div>
-                                                        <div id="tiaoCard">
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card21">1条
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card22">2条
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card23">3条
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card24">4条
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card25">5条
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card26">6条
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card27">7条
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card28">8条
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card29">9条
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                        </div>
-                                                        <div id="fengCard">
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card31">东
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;"> 
-                                                            </label>
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card32">南
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card33">西
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card34">北
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card35">中
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;"> 
-                                                            </label>
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card36">发
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card37">白
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;"> 
-                                                            </label>
-                                                        </div>
-                                                        <div id="huaCard">
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card41">春
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card42">夏
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card43">秋
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;"> 
-                                                            </label>
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card44">冬
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card45">梅
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card46">兰
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card47">竹
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                            <label class="checkbox inline">
-                                                                <input type="checkbox" value="" name="card48">菊
-                                                                <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                            </label>
-                                                    </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr name="handCards2">
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#box" href="#handCards">手牌</a>
+                            <div id="handCards" class="accordion-body collapse">
+                                <table class="table table-striped table-bordered table-hover table-condensed">
+                                    <tbody>
+                                        <tr>
+                                            <th>序列</th>
+                                            <th>手中牌</th>
+                                            <th>选中数</th>
+                                            <th>选取</th>
+                                        </tr>
+                                        <tr name="handCards1">
                                             <td> <input type="text" class="form-control" id="number" maxlength="5" onkeyup="value=value.replace(/[^\d]/g,'')" placeholder="1" style="width: 30px;"/></td>
-                                            <td> <input class="span4 uneditable-input" disabled type="text" placeholder="手牌数据" id="handcardsdata2" /> </td>
-                                            <td><label class="text-left search_form_div_label"  id="selectedNum2">0</label></td>
-                                            <td><div class="accordion" id="selectCardsBox2" >
-                                                    <div class="accordion-group" name="handcard2">
-                                                        <div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#selectCardsBox2" href="#selectHandCards2">选取手牌<a> </div>
-                                                        <div id="selectHandCards2" class="accordion-body collapse">
+                                            <td> <input class="span4 uneditable-input" disabled type="text" placeholder="手牌数据" id="handcardsdata" /> </td>
+                                            <td><label class="text-left search_form_div_label"  id="selectedNum">0</label></td>
+                                            <td><div class="accordion" id="selectCardsBox1" >
+                                                    <div class="accordion-group" name="handcard1">
+                                                        <div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#selectCardsBox1" href="#selectHandCards1">选取手牌<a> </div>
+                                                        <div id="selectHandCards1" class="accordion-body collapse">
                                                             <div id="wanCard">
                                                                 <label class="checkbox inline">
                                                                     <input type="checkbox" value="" name="card1">1万
@@ -515,391 +321,605 @@
                                                 </div>
                                             </td>
                                         </tr>
-                                        <tr name="handCards3">
-                                            <td> <input type="text" class="form-control" id="number" maxlength="5" onkeyup="value=value.replace(/[^\d]/g,'')" placeholder="1" style="width: 30px;"/></td>
-                                            <td> <input class="span4 uneditable-input" disabled type="text" placeholder="手牌数据" id="handcardsdata3" /> </td>
-                                            <td><label class="text-left search_form_div_label"  id="selectedNum3">0</label></td>
-                                            <td><div class="accordion" id="selectCardsBox3" >
-                                                    <div class="accordion-group" name="handcard3">
-                                                        <div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#selectCardsBox3" href="#selectHandCards3">选取手牌<a> </div>
-                                                        <div id="selectHandCards3" class="accordion-body collapse">
-                                                            <div id="wanCard">
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card1">1万
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card2">2万
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card3">3万
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card4">4万
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card5">5万
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card6">6万
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card7">7万
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card8">8万
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card9">9万
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
+                                        <tr name="handCards2">
+                                                <td> <input type="text" class="form-control" id="number" maxlength="5" onkeyup="value=value.replace(/[^\d]/g,'')" placeholder="1" style="width: 30px;"/></td>
+                                                <td> <input class="span4 uneditable-input" disabled type="text" placeholder="手牌数据" id="handcardsdata2" /> </td>
+                                                <td><label class="text-left search_form_div_label"  id="selectedNum2">0</label></td>
+                                                <td><div class="accordion" id="selectCardsBox2" >
+                                                        <div class="accordion-group" name="handcard2">
+                                                            <div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#selectCardsBox2" href="#selectHandCards2">选取手牌<a> </div>
+                                                            <div id="selectHandCards2" class="accordion-body collapse">
+                                                                <div id="wanCard">
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card1">1万
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card2">2万
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card3">3万
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card4">4万
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card5">5万
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card6">6万
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card7">7万
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card8">8万
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card9">9万
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                </div>
+                                                                <div id="tongCard">
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card11">1筒
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card12">2筒
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card13">3筒
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card14">4筒
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card15">5筒
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card16">6筒
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card17">7筒
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card18">8筒
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card19">9筒
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                </div>
+                                                                <div id="tiaoCard">
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card21">1条
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card22">2条
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card23">3条
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card24">4条
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card25">5条
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card26">6条
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card27">7条
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card28">8条
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card29">9条
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                </div>
+                                                                <div id="fengCard">
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card31">东
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;"> 
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card32">南
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card33">西
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card34">北
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card35">中
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;"> 
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card36">发
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card37">白
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;"> 
+                                                                    </label>
+                                                                </div>
+                                                                <div id="huaCard">
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card41">春
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card42">夏
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card43">秋
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;"> 
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card44">冬
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card45">梅
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card46">兰
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card47">竹
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card48">菊
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
                                                             </div>
-                                                            <div id="tongCard">
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card11">1筒
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card12">2筒
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card13">3筒
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card14">4筒
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card15">5筒
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card16">6筒
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card17">7筒
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card18">8筒
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card19">9筒
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
                                                             </div>
-                                                            <div id="tiaoCard">
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card21">1条
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card22">2条
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card23">3条
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card24">4条
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card25">5条
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card26">6条
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card27">7条
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card28">8条
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card29">9条
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                            </div>
-                                                            <div id="fengCard">
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card31">东
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;"> 
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card32">南
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card33">西
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card34">北
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card35">中
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;"> 
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card36">发
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card37">白
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;"> 
-                                                                </label>
-                                                            </div>
-                                                            <div id="huaCard">
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card41">春
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card42">夏
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card43">秋
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;"> 
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card44">冬
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card45">梅
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card46">兰
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card47">竹
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card48">菊
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                        </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr name="handCards4">
-                                            <td> <input type="text" class="form-control" id="number" maxlength="5" onkeyup="value=value.replace(/[^\d]/g,'')" placeholder="1" style="width: 30px;"/></td>
-                                            <td> <input class="span4 uneditable-input" disabled type="text" placeholder="手牌数据" id="handcardsdata4" /> </td>
-                                            <td><label class="text-left search_form_div_label"  id="selectedNum4">0</label></td>
-                                            <td><div class="accordion" id="selectCardsBox4" >
-                                                    <div class="accordion-group" name="handcard4">
-                                                        <div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#selectCardsBox4" href="#selectHandCards4">选取手牌<a> </div>
-                                                        <div id="selectHandCards4" class="accordion-body collapse">
-                                                            <div id="wanCard">
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card1">1万
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card2">2万
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card3">3万
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card4">4万
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card5">5万
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card6">6万
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card7">7万
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card8">8万
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card9">9万
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                            </div>
-                                                            <div id="tongCard">
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card11">1筒
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card12">2筒
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card13">3筒
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card14">4筒
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card15">5筒
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card16">6筒
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card17">7筒
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card18">8筒
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card19">9筒
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                            </div>
-                                                            <div id="tiaoCard">
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card21">1条
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card22">2条
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card23">3条
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card24">4条
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card25">5条
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card26">6条
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card27">7条
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card28">8条
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card29">9条
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                            </div>
-                                                            <div id="fengCard">
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card31">东
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;"> 
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card32">南
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card33">西
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card34">北
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card35">中
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;"> 
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card36">发
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card37">白
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;"> 
-                                                                </label>
-                                                            </div>
-                                                            <div id="huaCard">
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card41">春
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card42">夏
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card43">秋
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;"> 
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card44">冬
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card45">梅
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card46">兰
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card47">竹
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                                <label class="checkbox inline">
-                                                                    <input type="checkbox" value="" name="card48">菊
-                                                                    <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
-                                                                </label>
-                                                        </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </td>
-                                        </tr>                
-                                </tbody>
-                            </table>
+                                                </td>
+                                            </tr>
+                                            <tr name="handCards3">
+                                                <td> <input type="text" class="form-control" id="number" maxlength="5" onkeyup="value=value.replace(/[^\d]/g,'')" placeholder="1" style="width: 30px;"/></td>
+                                                <td> <input class="span4 uneditable-input" disabled type="text" placeholder="手牌数据" id="handcardsdata3" /> </td>
+                                                <td><label class="text-left search_form_div_label"  id="selectedNum3">0</label></td>
+                                                <td><div class="accordion" id="selectCardsBox3" >
+                                                        <div class="accordion-group" name="handcard3">
+                                                            <div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#selectCardsBox3" href="#selectHandCards3">选取手牌<a> </div>
+                                                            <div id="selectHandCards3" class="accordion-body collapse">
+                                                                <div id="wanCard">
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card1">1万
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card2">2万
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card3">3万
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card4">4万
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card5">5万
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card6">6万
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card7">7万
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card8">8万
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card9">9万
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                </div>
+                                                                <div id="tongCard">
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card11">1筒
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card12">2筒
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card13">3筒
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card14">4筒
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card15">5筒
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card16">6筒
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card17">7筒
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card18">8筒
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card19">9筒
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                </div>
+                                                                <div id="tiaoCard">
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card21">1条
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card22">2条
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card23">3条
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card24">4条
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card25">5条
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card26">6条
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card27">7条
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card28">8条
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card29">9条
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                </div>
+                                                                <div id="fengCard">
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card31">东
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;"> 
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card32">南
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card33">西
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card34">北
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card35">中
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;"> 
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card36">发
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card37">白
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;"> 
+                                                                    </label>
+                                                                </div>
+                                                                <div id="huaCard">
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card41">春
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card42">夏
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card43">秋
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;"> 
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card44">冬
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card45">梅
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card46">兰
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card47">竹
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card48">菊
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                            </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr name="handCards4">
+                                                <td> <input type="text" class="form-control" id="number" maxlength="5" onkeyup="value=value.replace(/[^\d]/g,'')" placeholder="1" style="width: 30px;"/></td>
+                                                <td> <input class="span4 uneditable-input" disabled type="text" placeholder="手牌数据" id="handcardsdata4" /> </td>
+                                                <td><label class="text-left search_form_div_label"  id="selectedNum4">0</label></td>
+                                                <td><div class="accordion" id="selectCardsBox4" >
+                                                        <div class="accordion-group" name="handcard4">
+                                                            <div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#selectCardsBox4" href="#selectHandCards4">选取手牌<a> </div>
+                                                            <div id="selectHandCards4" class="accordion-body collapse">
+                                                                <div id="wanCard">
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card1">1万
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card2">2万
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card3">3万
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card4">4万
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card5">5万
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card6">6万
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card7">7万
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card8">8万
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card9">9万
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                </div>
+                                                                <div id="tongCard">
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card11">1筒
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card12">2筒
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card13">3筒
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card14">4筒
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card15">5筒
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card16">6筒
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card17">7筒
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card18">8筒
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card19">9筒
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                </div>
+                                                                <div id="tiaoCard">
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card21">1条
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card22">2条
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card23">3条
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card24">4条
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card25">5条
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card26">6条
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card27">7条
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card28">8条
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card29">9条
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                </div>
+                                                                <div id="fengCard">
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card31">东
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;"> 
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card32">南
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card33">西
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card34">北
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card35">中
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;"> 
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card36">发
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card37">白
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;"> 
+                                                                    </label>
+                                                                </div>
+                                                                <div id="huaCard">
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card41">春
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card42">夏
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card43">秋
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;"> 
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card44">冬
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card45">梅
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card46">兰
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card47">竹
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                                    <label class="checkbox inline">
+                                                                        <input type="checkbox" value="" name="card48">菊
+                                                                        <input class="form-control" maxlength="1" name="number" placeholder="0" style="width: 10px;">
+                                                                    </label>
+                                                            </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>                
+                                    </tbody>
+                                </table>
+                            </div>
+                            </div>
                         </div>
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#box" href="#processList">流程列表</a>
+                            <div id="processList" class="accordion-body collapse">
+                                <table class="table table-striped table-bordered table-hover table-condensed">
+                                    <tbody>
+                                        <tr>
+                                            <th>序列</th>
+                                            <th>选取流程</th>
+                                            <th>输入参数</th>
+                                            <th>增加前一个</th>
+                                            <th>增加后一个</th>
+                                            <th>删除</th>
+                                        </tr>
+                                        <tr name="process1">
+
+                                        </tr>                
+                                    </tbody>
+                                </table>
+                            </div>
+                            </div>
                         </div>
                     </div>
                 </td>
