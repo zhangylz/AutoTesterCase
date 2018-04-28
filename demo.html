@@ -7,14 +7,13 @@
 		<!-- Requirement: jQuery -->
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 		<!-- Requirement: Bootstrap -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 		<!-- Table editor -->
-		<link rel="stylesheet" href="src/bootstrap.table-editor.css">
-        <script src="src/bootstrap.table-editor.js"></script>
-        <link rel="stylesheet" href="src/bootstrap-table.css">
-		<script src="src/bootstrap-table.js"></script>
+		<link rel="stylesheet" href="bootstrap.table-editor.css">
+        <script src="bootstrap.table-editor.js"></script>
+        <link rel="stylesheet" href="bootstrap-table.css">
+		<script src="bootstrap-table.js"></script>
 		<style>
 			.table-editable td {
 				position: relative;
@@ -79,129 +78,119 @@
 					console.log('Table #2 JSON:', $('#table2').tableEditor('json'))
 				})
 			});
-        var data = [{ "img":"1.jpg", "count":"4",
-            "img":"1.jpg", "count":"4","img":"1.jpg", "count":"4"
-        ,
-        },{ "img":"1.jpg", "count":"4",
-            "img":"1.jpg", "count":"4","img":"1.jpg", "count":"4"
-        ,
-        }];
+        var data = [{"card1":{"img":"./images/1.jpg"}, "card2":{"img":"./images/1.jpg"},"card3":{"img":"./images/1.jpg"},
+                     "card4":{"img":"./images/1.jpg"}, "card5":{"img":"./images/1.jpg"},"card6":{"img":"./images/1.jpg"},
+                     "card7":{"img":"./images/1.jpg"}, "card8":{"img":"./images/1.jpg"},"card9":{"img":"./images/1.jpg"}
+                     }];
 
         var $table = $('#table3');
 
         $(function () {
             $table.bootstrapTable({
                 idField: 'name',
+                showHeader:false,
                 columns: [
                         [
                             {
-                                title: 'card1',
-                                colspan: 3,
-                                rowspan: 1,
-                                align: 'center'
+                                field: 'card1',
+                                title: '牌',
+                                formatter: cardFormatter //自定义方法，添加操作按钮
                             },
                             {
-                                title: 'card2',
-                                colspan: 3,
-                                rowspan: 1,
-                                align: 'center'
+                                field: 'card2',
+                                title: '牌',
+                                formatter: cardFormatter //自定义方法，添加操作按钮
                             },
                             {
-                                title: 'card3',
-                                colspan: 3,
-                                rowspan: 1,
-                                align: 'center'
+                                field: 'card3',
+                                title: '牌',
+                                formatter: cardFormatter //自定义方法，添加操作按钮
+                            },
+                            {
+                                field: 'card4',
+                                title: '牌',
+                                formatter: cardFormatter //自定义方法，添加操作按钮
+                            },
+                            {
+                                field: 'card5',
+                                title: '牌',
+                                formatter: cardFormatter //自定义方法，添加操作按钮
+                            },
+                            {
+                                field: 'card6',
+                                title: '牌',
+                                formatter: cardFormatter //自定义方法，添加操作按钮
+                            },
+                            {
+                                field: 'card7',
+                                title: '牌',
+                                formatter: cardFormatter //自定义方法，添加操作按钮
+                            },
+                            {
+                                field: 'card8',
+                                title: '牌',
+                                formatter: cardFormatter //自定义方法，添加操作按钮
+                            },
+                            {
+                                field: 'card9',
+                                title: '牌',
+                                formatter: cardFormatter //自定义方法，添加操作按钮
                             },
                         ],
-                        [{
-                            field: 'state',
-                            title: '',
-                            checkbox: true
-                        },
-                        {
-                            field:'img', title:'图片',
-                            formatter:function(value, row, index){
-                                console.log("value %s index %s", value, index);
-                                var s = '<a class = "view"  href="javascript:void(0)"><img style="width:70;height:30px;"  src="'+row.img+'" /></a>';
-                                return s;
-                            },
-                        },
-                         {
-                            field: 'count',
-                            title: 'counts',
-                            editable: {
-                                type: 'text',
-                                title: 'counts',
-                                validata: function(v) {
-                                    if (!v) return '用户输入地不能为空';
-                                }
-                            },
-                        },
-                        {
-                            field: 'state',
-                            title: '',
-                            checkbox: true
-                        },
-                        {
-                            field:'img', title:'图片',
-                            formatter:function(value, row, index){
-                                console.log("value %s index %s", value, index);
-                                var s = '<a class = "view"  href="javascript:void(0)"><img style="width:70;height:30px;"  src="'+row.img+'" /></a>';
-                                return s;
-                            },
-                        },
-                         {
-                            field: 'count',
-                            title: 'counts',
-                            editable: {
-                                type: 'text',
-                                title: 'number',
-                                validata: function(v) {
-                                    if (!v) return '用户输入地不能为空';
-                                }
-                            },
-                            },
-
-                        
-                        {
-                            field: 'state',
-                            title: '',
-                            checkbox: true
-                        },{
-                            field:'img', title:'图片',
-                            formatter:function(value, row, index){
-                                console.log("value %s index %s", value, index);
-                                var s = '<a class = "view"  href="javascript:void(0)"><img style="width:70;height:30px;"  src="'+row.img+'" /></a>';
-                                return s;
-                            },
-                        },
-                         {
-                            field: 'count',
-                            title: 'counts',
-                            editable: {
-                                type: 'text',
-                                title: 'number',
-                                validata: function(v) {
-                                    if (!v) return '用户输入地不能为空';
-                                }
-                            },
-                        }],
                     ],
                 data: data
             });
-            $table.bootstrapTable("hideRow",0);
         });
-        window.operateEvents = {
-            'click .view': function (e, value, row, index) {
-            layer.open({
-            type: 1,
-            title: false,
-            closeBtn: 0,
-            area: 'auto',
-            skin: 'layui-layer-nobg', //没有背景色
-            shadeClose: true,
-            content: '<img src="'+row.img+'"/>'
-            });},
+        function cardFormatter(value, row, index) {//赋予的参数
+            console.log("value %s",value.img);
+            var pngPath = value.img;
+            console.log("row %s",row);
+            console.log("row.img %s", row)
+            console.log("index %s",index);
+            return [
+                '<div>',
+                '<div  style="float:left;width:20%;vertical-align:middle;">',
+                '<input type="checkbox" id = "selected" name="selected" style="vertical-align:middle;" /input>','</div>',
+                '<div  style="float:left;width:55%;vertical-align:middle;">',
+                '<img src="{path}" height=55 width=50 alt="" style="vertical-align:middle;" /img>'.format({path:pngPath}),'</div>',
+                '<div  style="float:left;width:25%;vertical-align:middle;">',
+                '<input class="form-control" maxlength="1" name="cardCnt" id="cardCnt" placeholder="4" style="width: 10px;vertical-align:middle;" /input>','</div>',
+                '</div>',
+            ].join('');
+        };
+        String.prototype.format = function(args) {
+            var result = this;
+            if (arguments.length > 0) {
+                if (arguments.length == 1 && typeof (args) == "object") {
+                    for (var key in args) {
+                        if (args[key] != undefined) {
+                            var reg = new RegExp("({" + key + "})", "g");
+                            result = result.replace(reg, args[key]);
+                        }
+                    }
+                }
+                else {
+                    for (var i = 0; i < arguments.length; i++) {
+                        if (arguments[i] != undefined) {
+                            //var reg = new RegExp("({[" + i + "]})", "g");//这个在索引大于9时会有问题，谢谢何以笙箫的指出
+                            var reg = new RegExp("({)" + i + "(})", "g");
+                            result = result.replace(reg, arguments[i]);
+                        }
+                    }
+                }
+            }
+            return result;
+        };
+        String.format = function () {
+            if (arguments.length == 0)
+                return null;
+
+            var str = arguments[0];
+            for (var i = 1; i < arguments.length; i++) {
+                var re = new RegExp('\\{' + (i - 1) + '\\}', 'gm');
+                str = str.replace(re, arguments[i]);
+            }
+            return str;
         };
 		</script>
 	</body>
